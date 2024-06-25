@@ -1,40 +1,65 @@
-
-            .header{
-                background-color: black;
-                width:auto
+@keyframes example {
+  0%   {background-color: rgb(3, 0, 0);}
+  25%  {background-color: rgb(7, 0, 0);}
+  50%  {background-color: rgb(10, 0, 0);}
+  100% {background-color: rgb(12, 0, 0);}
+}
+          
+          
+            p{
+             
             }
             .tablink {
-                background-color: #555;
-                color: white;
+              background-color: #000000;
+              
+              animation-delay: -12s;
+                
+                color: rgb(255, 255, 255);
                 float: left;
-                border: none;
-                outline: none;
+                border: rgb(0, 0, 0);
+                outline: rgb(0, 0, 0);
                 cursor: pointer;
                 padding: 14px 16px;
                 font-size: 17px;
                 width: 25%;
+                animation-delay: -2s;
+               animation-name: example;
+              animation-duration: 5s;
+              animation-timing-function: linear;
+              animation-delay: 2s;
+              animation-iteration-count:infinite ;
+              animation-direction: right;
+            
+              
+              animation-name: example;
+              animation-duration: 4s;
+              animation-timing-function: ease-in;
               }
+
               
               /* Change background color of buttons on hover */
               .tablink:hover {
-                background-color: #777;
+                animation-delay: -2s;
+                background-color: #000000;
               }
               
               /* Set default styles for tab content */
               .tabcontent {
-                color: white;
+                animation-delay: -2s;
+                color: rgb(2, 0, 0);
                 display: none;
                 padding: 50px;
                 text-align: center;
               }
               
               /* Style each tab content individually */
-              #Home {background-color:red;}
-              #About {background-color:green;}
-              #Education {background-color:blue;}
-              #Career {background-color:orange;}
+              #Home {background-color:rgb(0, 0, 0);}
+              #About {background-color:rgb(0, 3, 0);}
+              #Education {background-color:rgb(0, 0, 0);}
+              #Career {background-color:rgb(0, 0, 0);}
 
               img {
+                animation-delay: -2s;
                 border-radius: 50%;
                 height: 350px;
                 width: 280px
